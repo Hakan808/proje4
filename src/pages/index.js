@@ -49,7 +49,7 @@ function Home() {
         </div>
         <div className={styles.products}>
           {state.products.map((item) => (
-            <div className={styles.item}>
+            <div key={item.id} className={styles.item}>
               <p>{item.name}</p>
               <button
                 onClick={() => dispatch({ type: "remove", payload: item.id })}
