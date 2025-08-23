@@ -1,4 +1,4 @@
-.page {
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -106,10 +106,10 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
-}
+} */
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -165,4 +165,57 @@ a.secondary {
   .logo {
     filter: invert();
   }
+} */
+ 
+ .root{
+  background-color: rgba(216, 112, 147, 0.823);
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.title{
+  text-align:  center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border:2px dashed;
+  background-color: #fff;
+  padding: 10px 120px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.products{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.item{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.btn{
+  color: red;
+  font-weight: bolder;
+  border: none;
+  background-color: transparent;
 }
